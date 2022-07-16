@@ -21,9 +21,7 @@ html {
     background: black;
 }
 
-::-webkit-scrollbar-thumb {
-    background: crimson;
-}
+::-webkit-scrollbar-thumb {}
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
@@ -195,6 +193,7 @@ section .title::after {
     color: #fff;
     min-height: 500px;
     background-size: cover;
+    text-align: center;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -203,7 +202,7 @@ section .title::after {
     width: 100%;
     display: flex;
     margin-left: 400px;
-    text-align: center;
+
 }
 
 
@@ -612,18 +611,24 @@ footer span a:hover {
 
 
 /* responsive media query start */
+
+
 @media (max-width: 1104px) {
     .about .about-content .left img {
-        height: 350px;
+        height: 210px;
         width: 350px;
+    }
+
+    .about .title {
+        margin-top: -70px;
     }
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
     }
-}
+} */
 
 @media (max-width: 947px) {
     .menu-btn {
@@ -692,7 +697,7 @@ footer span a:hover {
         flex: 100%;
     }
 
-    .skills .serv-content .card {
+    .services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -709,6 +714,8 @@ footer span a:hover {
         padding: 0 23px;
     }
 
+
+
     .home .home-content .text-2 {
         font-size: 60px;
     }
@@ -721,7 +728,7 @@ footer span a:hover {
         font-size: 20px;
     }
 
-    .skills .serv-content .card {
+    .services .serv-content .card {
         width: 100%;
     }
 }
@@ -731,8 +738,47 @@ footer span a:hover {
         font-size: 50px;
     }
 
+    .home {
+        width: 100vh;
+        height: 100vh;
+    }
+
+    .home .max-width {
+        text-align: left;
+        display: flex;
+        text-align: left;
+    }
+
+    .about {
+        width: 100vh;
+    }
+
+    .skills {
+        width: 100vh;
+    }
+
+    .projects {
+        width: 100vh;
+    }
+
+    .contact {
+        width: 100vh;
+    }
+
+    .findme {
+        width: 100vh;
+    }
+
+    .footer {
+        width: 100vh;
+    }
+
     .home .home-content .text-3 {
         font-size: 27px;
+    }
+
+    .about .title {
+        margin-top: -70px;
     }
 
     .about .about-content .right .text,
