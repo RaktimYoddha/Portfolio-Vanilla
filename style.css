@@ -14,18 +14,23 @@ html {
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
+
     width: 10px;
+    background-color: black;
+
 }
 
 ::-webkit-scrollbar-track {
     background: black;
 }
 
-::-webkit-scrollbar-thumb {}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+::-webkit-scrollbar-thumb {
+    background: crimson;
 }
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
 
 /* all similar content styling codes */
 section {
@@ -875,5 +880,12 @@ footer span a:hover {
 
     footer {
         font-size: 14px;
+    }
+
+    ::-webkit-scrollbar {
+
+        width: 5px;
+        background-color: black;
+
     }
 }
