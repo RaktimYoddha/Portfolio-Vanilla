@@ -191,7 +191,6 @@ section .title::after {
     background: url("images/banner.png") no-repeat center;
     min-height: 100vh;
     color: #fff;
-    min-height: 500px;
     background-size: cover;
     text-align: center;
     background-attachment: fixed;
